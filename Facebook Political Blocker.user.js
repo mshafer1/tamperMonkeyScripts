@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Facebook Political Blocker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
+// @description  Disable posts on Facebook that contain any of the keywords in the list below. Posts can be re-enabled by clicking on them.
 // @author       You
 // @match        https://www.facebook.com/*
 // @require      https://code.jquery.com/jquery-3.4.1.min.js
@@ -18,6 +18,7 @@
     }
 
     function fadeIn() {
+        $(this).attr('disabled', false);
         $(this).fadeTo('slow', 1);
         $(this).off();
     }
