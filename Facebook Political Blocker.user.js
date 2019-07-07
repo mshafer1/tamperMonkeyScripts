@@ -4,7 +4,7 @@
 // @version      0.4
 // @description  Disable posts on Facebook that contain any of the keywords in the list below. Posts can be re-enabled by clicking on them.
 // @author       mshafer1 (github.com/mshafer1)
-// @require      facebook_blocker_includes/methods.js
+// @resource      facebook_blocker_includes/methods.js
 // @match        https://www.facebook.com/*
 // @require      https://code.jquery.com/jquery-3.4.1.min.js
 // @licence      GPL-3.0-or-later; https://github.com/mshafer1/tamperMonkeyScripts/blob/master/LICENSE
