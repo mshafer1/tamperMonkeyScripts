@@ -16,5 +16,5 @@
 
     var keywords = ['politics', 'Trump', 'election', 'political', 'vote', 'voting'];
 
-    $(window).scroll(checkScreen);
+    $(window).scroll(function (){checkScreen(keywords)});
 })();

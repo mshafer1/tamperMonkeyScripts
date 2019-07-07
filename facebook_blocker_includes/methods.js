@@ -8,7 +8,7 @@ function fadeIn() {
     $(this).off();
 }
 
-function checkScreen() {
+function checkScreen(keywords) {
     $('.userContentWrapper').each(function () {
         // console.log($(this));
         var html = $(this).first().html();
