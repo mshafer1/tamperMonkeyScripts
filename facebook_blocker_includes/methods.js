@@ -20,3 +20,10 @@ function checkScreen(keywords) {
         }
     });
 }
+
+try {
+    var exports = module.exports = {};
+    exports.check = check;
+} catch (error) {
+    console.log('we caught an error');
+}

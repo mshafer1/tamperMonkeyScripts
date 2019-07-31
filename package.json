@@ -1,0 +1,25 @@
+{
+  "name": "tampermonkeyscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Facebook Political Blocker.user.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest test --coverage --collectCoverageFrom=facebook_blocker_includes/*.js",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mshafer1/tamperMonkeyScripts.git"
+  },
+  "author": "mshafer1",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/mshafer1/tamperMonkeyScripts/issues"
+  },
+  "homepage": "https://github.com/mshafer1/tamperMonkeyScripts#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "jest": "^24.8.0"
+  }
+}
