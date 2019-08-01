@@ -1,5 +1,25 @@
 function check(word, html) {
+    own_word = '\\s+' + word + '\\s+';
+    if(check_regex(own_word, html)) {
+        return true;
+    }
+
+    hash_tag = '\\#\\S*' + word;
+    if(check_regex(hash_tag, html)) {
+        return true;
+    }
+
+    url = 'https?\\:\\/\\/\\S*' + word + '\\S*'
+    if(check_regex(url, html)) {
+        return false;
+    }
+
     return html.toLowerCase().search(word.toLowerCase()) != -1;
+}
+
+function check_regex(re, html, flags='ig') {
+    var r = new RegExp(re, flags);
+    return html.match(r) != null;
 }
 
 function fadeIn() {
@@ -25,5 +45,5 @@ try {
     var exports = module.exports = {};
     exports.check = check;
 } catch (error) {
-    console.log('we caught an error');
+    // pass
 }
