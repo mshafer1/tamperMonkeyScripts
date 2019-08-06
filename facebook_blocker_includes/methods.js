@@ -33,7 +33,7 @@ function checkScreen(keywords) {
         // console.log($(this));
         var html = $(this).first().html();
         if(keywords.some(function (e) {return check(e, html);})) {
-            // console.log("Match");
+            console.log("Match: " + e);
             $(this).attr('disabled', true);
             $(this).fadeTo('fast', .1);
             $(this).click(fadeIn);
