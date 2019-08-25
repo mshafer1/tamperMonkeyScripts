@@ -1,3 +1,5 @@
+METHODS_VERSION = 2.1
+
 function check(word, html) {
     own_word = '\\s+' + word + '\\s+';
     if(check_regex(own_word, html)) {
