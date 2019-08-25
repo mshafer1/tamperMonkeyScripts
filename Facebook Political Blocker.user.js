@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook Political Blocker
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Disable posts on Facebook that contain any of the keywords in the list below. Posts can be re-enabled by clicking on them.
 // @author       mshafer1 (github.com/mshafer1)
 // @match        https://www.facebook.com/*
