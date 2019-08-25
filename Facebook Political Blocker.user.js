@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Facebook Political Blocker
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Disable posts on Facebook that contain any of the keywords in the list below. Posts can be re-enabled by clicking on them.
 // @author       mshafer1 (github.com/mshafer1)
 // @match        https://www.facebook.com/*
@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 /*
-Actual checking code is abstraced to http://github.com/mshafer1/tamperMonkeyScripts/facebook_blocker_includes/methods.js
+Actual checking code is abstraced to https://raw.githubusercontent.com/mshafer1/tamperMonkeyScripts/master/facebook_blocker_includes/methods.js
 for asynchrounous updating
 */
 
@@ -27,6 +27,6 @@ for asynchrounous updating
         checkScreen(keywords);
     }
 
-    script.src = 'http://github.com/mshafer1/tamperMonkeyScripts/facebook_blocker_includes/methods.js;';
+    script.src = 'https://raw.githubusercontent.com/mshafer1/tamperMonkeyScripts/master/facebook_blocker_includes/methods.js';
     document.head.appendChild(script);   
 })();
