@@ -1,4 +1,4 @@
-METHODS_VERSION = 2.1
+METHODS_VERSION = 3.0 // 7/26/2020
 
 function check(word, html) {
     own_word = '\\s+' + word + '\\s+';
@@ -31,7 +31,7 @@ function fadeIn() {
 }
 
 function checkScreen(keywords) {
-    $('.userContentWrapper').each(function () {
+    $('[data-testid="Keycommand_wrapper_feed_story"]').each(function () {
         // console.log($(this));
         var html = $(this).first().html();
         if(keywords.some(function (e) {return check(e, html);})) {
