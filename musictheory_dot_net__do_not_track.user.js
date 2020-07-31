@@ -14,7 +14,8 @@
     function clear_data() {
         localStorage.clear();
         console.log("Cookies: ", document.cookie);
-        document.cookie = 'B=; path=/; expires='+ new Date(0);
+        document.cookie = 'B=; path=/; SameSite=None; Secure; expires='+ new Date(0);
+        document.cookie = 'arp_scroll_position=; path=/; SameSite=None; Secure; expires='+ new Date(0);
         console.log("Cookies: ", document.cookie);
     }
     clear_data();
